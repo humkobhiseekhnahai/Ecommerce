@@ -1,31 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import "./App.css";
-import Pay from './Pay';
+import Cart from "./pages/Cart.jsx";
+import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
+import Product from "./pages/Product";
+import ProductList from "./pages/ProductList.jsx";
+import Register from "./pages/Register.jsx";
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        {/* Conditionally render navigation only when needed */}
-        {false && (
-          <nav>
-            <ul>
-              <li>
-                <Link to="/pay">PAY</Link>
-              </li>
-              {/* Add more navigation links as needed */}
-            </ul>
-          </nav>
-        )}
-
-        <Routes>
-          <Route path="/pay" element={<Pay />} />
-          {/* Add more Route components for other paths */}
-        </Routes>
-      </div>
-    </Router>
-  );
+    <Product/>
+  )
 };
 
 export default App;
