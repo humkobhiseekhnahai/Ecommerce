@@ -7,5 +7,5 @@
 # FRONTEND
 
 	npm i
-	change the images links according to your products
+	change the image links according to your products
 	npm run dev 
